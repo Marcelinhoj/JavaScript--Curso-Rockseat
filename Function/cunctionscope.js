@@ -1,7 +1,7 @@
 // function scope
 let subject
 
-funcition createThink() {
+function createThink() {
   subject = 'study'
 }
 
