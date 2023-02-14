@@ -1,12 +1,12 @@
-Como reolver problemas na linguagem de programação ?
-Como melhorar minha lógica de programação?
+Boas práticas na escrita de variáveis
 
-1. Identifique o que já save e faça !
-2. Quebre o grande problema em problemas menores!
+- Em inglês
+- Sem espaços ou acentuações especias no nome
+- Não pode iniciar com número
+- camelCase
 
-O que estou aprendendo de ferramentas do JS
-
-[] executar funções
-[] variáveis
-[] concatenação
-[] tipo de dado: String
+[] Tipo de dado: Number
+[] Operador matemático
+[] Manipulação de dados
+ [] tyoe conversion (type casting)
+[] Ordem de precedência dos operadores
