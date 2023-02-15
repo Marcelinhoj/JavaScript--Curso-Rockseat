@@ -1,8 +1,14 @@
-/*
-    Solicite 2 números, faça a soma deles e apresente o resultado finao ao usuário
-*/
-alert("Iremos somar 2 números");
-let numberOne = prompt ("Digite o Primeiro numero: ");
-let numberTwo = prompt ("Digite o segundo número: ");
-let result = Number(numberOne) + Number(numberTwo)
-alert(" Resultado final: " + result)
+/* 
+
+  Capturar 2 números e fazer as operações matemáticas de soma, subtração, multiplicação, divisão e resto da divisão.
+
+  E para cada operação, mostrar um alerta com o resultado
+
+  */
+
+  let firstNumber = promt('Digite o primeiro número: ')
+  let secundNumber = prompt('Digite o segundo número: ')
+
+  firstNumber = Number(firstNumber)
+  secundNumber = Number(secundNumber)
+
