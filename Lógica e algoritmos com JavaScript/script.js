@@ -1,14 +1,12 @@
-/* 
+/*
+  Solicitar o nome do aluno e as 3 notas do bimestre calcular a média daquele aluno.
 
-  Capturar 2 números e fazer as operações matemáticas de soma, subtração, multiplicação, divisão e resto da divisão.
+  A média positiva deverá ser maior que 6
 
-  E para cada operação, mostrar um alerta com o resultado
+  Se o aluno passou no bimestre, dar os parabéns.
 
-  */
+  Se o aun não passou n bimestre, motivar o aluno a dar o seu melhor na prova de recuperação.
 
-  let firstNumber = promt('Digite o primeiro número: ')
-  let secundNumber = prompt('Digite o segundo número: ')
-
-  firstNumber = Number(firstNumber)
-  secundNumber = Number(secundNumber)
+  Em amos os casos, mostre uma mensagem com o nome do aluno e a nota
+*/ 
 
