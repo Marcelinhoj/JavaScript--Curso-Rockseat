@@ -1,30 +1,42 @@
 /*
-  ** Jogo da adivinhação **
+  Olá usuário! Digite o númeroda opção desejada
 
-  Apresente uma mensagem ao usuário:
-  "Adivinhe o número que estou pensando? Está ente 0 e 10"
+  1. Cadastrar um item na lista
+  2. Mostrar itens cadastrados
+  3. Sair do programa
+  ---
 
-  Crie um lógica para gerar um númeri digitado é  mesmo que o aleatório gerado pelo sistema.
+  O programa deverá capturar o número digitado pelo usuário e mostrar o seguinte cenário
 
-  Enquanto o usuário não adivinhar o número, mostrar a mensagem: "Erro, tente novamente:"
-
-  Caso o usuário acete onúmero, apresentar a mesangem: " Parabéns ! Você adivinhou o número em x tentativas"
-
-  Substitua o "x" da mensagem, pelo númeto de tentativas
+  Caso o usuário digite 1, ele poderá cadastrar um irem em uma lida
+  Caso o usuário digite 2, ele poderá ver os itens cadastrados
+    Se não houver nenhum item cadastrado, mostrar a mensagem :
+      "Não existem itens cadastrados"
+  Caso o usuário digite 3, a aplicação deverá ser encerrada.
 */
 
-let result = prompt("Adivinhe o número que estou pensando? Esta ente 0 e 10")
-const randomNumber = Math.round(Math.random() * 10)
+let option
+let items = []
 
-let xAttempts = 1
+while(option != 3) {
+  option = Number(prompt(`
+  Olá usuário! Digite o número da opção desejada
 
-while(Number(result) != randomNumber ) {
-  result = prompt(`Erro, tente novamente:`)
-  xAttempts++
+  1. Cadastrar um item na lista
+  2. Mostrar itens cadastrados
+  3. Sair do programa
+  `))
+
+  if(option == 1){
+    let item = prompt("Digite o nome do item")
+    items.push(item)
+  }
+
+  else if (option ==2) {
+
+    if( items.length == 0) {
+      
+    }
+  }
+
 }
- if (xAttempts == 1){
-  alert(`Parabéns! Você adivinhou o número em ${xAttempts} tentativa.`)
- } else{
-  alert(`Parabéns! Você adivinhou o número em ${xAttempts} tentativas.`)
-
- }
