@@ -18,12 +18,12 @@
 let option
 let items = []
 
-while(orption !=3) {
-  
+while(option !=3) {
+
   option = Number(prompt(`
     Olá usuário! Digite o número da opção desejada
     
-    1. Cadastrar um tirem na lista
+    1. Cadastrar um item na lista
     2. Mostrar itens cadastrados
     3. Sair do programa
   `))
