@@ -1,5 +1,7 @@
 /*
-  Olá usuário! Digite o númeroda opção desejada
+  Faça um programa que tenha um menu e apresente a seguinte mensagem:
+
+  Olá usuário! Digite o número da opção desejada
 
   1. Cadastrar um item na lista
   2. Mostrar itens cadastrados
