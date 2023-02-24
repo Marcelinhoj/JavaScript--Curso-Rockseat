@@ -35,7 +35,7 @@ const patients = [
 
 let patientsNames = []
 
-for(let patients of patients) {
+for(let patient of patients) {
   patientsNames.push(patient.name)
 }
 
