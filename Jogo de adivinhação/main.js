@@ -9,6 +9,11 @@ let xAttempts = 1
 //eventos
 btnTry.addEventListener('click', handleTryClick)
 btnReset.addEventListener('click', handleResetClick)
+document.addEventListener('keydown', function(e){
+    console.log(e.key)
+    handleResetClick
+  }
+)
 
 //Função callback
 function handleTryClick(event) {
@@ -16,9 +21,7 @@ function handleTryClick(event) {
 
   const inputNumber = document.querySelector("#inputNumber")
 
-  if(Number(inputNumber.value) == randomNumber) {
-    screen1.classList.add("hide")
-    screen2.classList.remove("hide")
+  if(Number(inputNumber.value) == randomNumber) {  
     
     document
         .querySelector(".screen2 h2")
@@ -29,8 +32,7 @@ function handleTryClick(event) {
   xAttempts++  
 }
  function handleResetClick(){
-  screen1.classList.remove("hide")
-  screen2.classList.add("hide")
+  toggleScreen()
   xAttempts = 1
  }
 
