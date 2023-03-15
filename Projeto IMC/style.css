@@ -166,3 +166,14 @@ form button:hover {
 .modal button:hover {
   transform: scale(1.3);
 }
+
+/* alert error */
+
+.alert-error {
+    position: absolute;
+    background-color: var(--bg-error);
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
