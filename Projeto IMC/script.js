@@ -7,6 +7,16 @@ const modalWrapper = document.querySelector('.modal-wrapper')
 const modalMessage = document.querySelector('.modal .title span')
 const modalBtnClosed = document.querySelector('.modal button.close')
 
+const Modal = {
+  open() {
+
+  },
+  close: function() {
+    
+  }
+  
+}
+
 
 //3 maneiras de criar e atribuir função a um evento
 
@@ -29,8 +39,7 @@ form.onsubmit = event => {
   modalWrapper.classList.add('open')
 }
 
-modalBtnClosed.onclick = ()
- => {
+modalBtnClosed.onclick = () => {
     modalWrapper.classList.remove('open')
  }
 function IMC (weight, height) {
