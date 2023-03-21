@@ -14,10 +14,10 @@ const Modal = {
   buttonClose: document.querySelector('.modal button.close'),
 
   open() {
-    modalWrapper.classList.add('open')
+    Modal.wrapper.classList.add('open')
   },
   close: function() {
-    modalWrapper.classList.remove('open')
+    Modal.wrapper.classList.remove('open')
   }
   
 }
@@ -52,3 +52,4 @@ function IMC (weight, height) {
 }
 
 
+''
