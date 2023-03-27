@@ -172,6 +172,7 @@ form button:hover {
 .alert-error.open {
   visibility: visible;
   opacity: 1;
+  transform: translateY(0)
 
 }
 
