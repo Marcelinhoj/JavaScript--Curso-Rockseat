@@ -1,4 +1,5 @@
 import { Modal } from './modal.js'
+import { AlertError } from "./alert-error.js"
 
 // variaveis - variables
 const form = document.querySelector('form')
@@ -23,7 +24,7 @@ form.onsubmit = event => {
   const showAlertError = notANumber(height) || notANumber(height)
 
   if(showAlertError) {
-    console.log('Mostrar o alerta de erro')
+    AlertError.open()
     return;
   }
 
