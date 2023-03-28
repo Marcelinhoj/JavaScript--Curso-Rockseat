@@ -55,6 +55,7 @@ main {
   font-size: clamp(4rem, 4rem + 10vw, 8.8rem);
 
   display: flex;
+  margin-bottom: 1.6rem;
 }
 
 #controls {
@@ -76,6 +77,5 @@ footer {
   align-self: end ;
   justify-self: end;
 
-  padding: 0 4 rem 3.2rem 0;
+  padding: 0 4rem 3.2rem 0;
 }
-
