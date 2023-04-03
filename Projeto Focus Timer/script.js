@@ -15,6 +15,8 @@ let minutes
 const minutesDisplay = document.querySelector('.minutes')
 const secundsDisplay = document.querySelector('.secunds')
 
+function resetControls()
+
 // Event-driven
 // programação imperativa
 // callback
@@ -24,7 +26,7 @@ function countdown() {
     let secunds = Number(secundsDisplay.textContent)
     let minutes = Number(minutesDisplay.textContent)
 
-    secundsDisplay.textContent = String(secunds -1).padStart(2, "0")   
+    secundsDisplay.textContent = "0"   
     
     
     if (minutes <= 0) {
