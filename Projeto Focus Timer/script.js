@@ -13,9 +13,20 @@ const buttonSoundOn = document.querySelector('.sound-on')
 const buttonSoundOff = document.querySelector('.sound-off')
 let minutes 
 const minutesDisplay = document.querySelector('.minutes')
-const secundsDisplay = document.querySelector('.secunds')
+const secondsDisplay = document.querySelector('.seconds')
 
-function resetControls()
+function resetControls() {
+  buttonPlay.classList.remove('hide')
+  buttonPause.classList.add('hide')
+  buttonSet.classList.remove('hide')
+  buttonStop.classList.add('hide')
+
+}
+
+function updateTimerDisplay(minutes, seconds) {
+  minutesDisplay.textContent = String(minutes).padStart(2, "0")
+  secondsDisplay.textContent = String(seconds).padStart(2, "0")
+}
 
 // Event-driven
 // programação imperativa
@@ -23,29 +34,26 @@ function resetControls()
 
 function countdown() {
   setTimeout(function() {
-    let secunds = Number(secundsDisplay.textContent)
+    let seconds = Number(secondsDisplay.textContent)
     let minutes = Number(minutesDisplay.textContent)
 
-    secundsDisplay.textContent = "0"   
+      updateTimerDisplay(minutes, 0) 
     
     
     if (minutes <= 0) {
-      buttonPlay.classList.remove('hide')
-      buttonPause.classList.add('hide')
-      buttonSet.classList.remove('hide')
-      buttonStop.classList.add('hide')
+     
+      resetControls()
       
       return
     }
     
-    if ( secunds <= 0) {
-      secunds = 60
-
-      minutesDisplay.textContent = String(minutes -1).padStart(2, "0")
+    if ( seconds <= 0) {
+      seconds = 30
+      -- minutes 
     }
 
-    secundsDisplay.textContent = String(secunds -1).padStart(2, "0")   
-
+     
+    updateTimerDisplay(minutes, seconds -1)
     
     countdown()
   }, 1000)
@@ -70,10 +78,7 @@ buttonPause.addEventListener('click', function() {
 })
 
 buttonStop.addEventListener('click', function() {
-  buttonPlay.classList.remove('hide')
-  buttonPause.classList.add('hide')
-  buttonSet.classList.remove('hide')
-  buttonStop.classList.add('hide')
+  resetControls
 })
 
 buttonSoundOff.addEventListener('click', function() {
@@ -88,6 +93,7 @@ buttonSoundOn.addEventListener('click', function() {
 
 buttonSet.addEventListener('click', function() {
   minutes = prompt('Quantos minutos?')
-  minutesDisplay.textContent = String(minutes).padStart(2, "0")
+
+  updateTimerDisplay(minutes, 0)
 
 })
