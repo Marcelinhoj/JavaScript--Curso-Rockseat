@@ -12,6 +12,7 @@ const buttonSet = document.querySelector('.set')
 const buttonSoundOn = document.querySelector('.sound-on')
 const buttonSoundOff = document.querySelector('.sound-off')
 let minutes 
+let timerTimeOut
 const minutesDisplay = document.querySelector('.minutes')
 const secondsDisplay = document.querySelector('.seconds')
 
@@ -33,7 +34,7 @@ function updateTimerDisplay(minutes, seconds) {
 // callback
 
 function countdown() {
-  setTimeout(function() {
+   timerTimeOut = setTimeout(function() {
     let seconds = Number(secondsDisplay.textContent)
     let minutes = Number(minutesDisplay.textContent)
 
@@ -48,7 +49,7 @@ function countdown() {
     }
     
     if ( seconds <= 0) {
-      seconds = 30
+      seconds = 3
       -- minutes 
     }
 
@@ -79,6 +80,7 @@ buttonPause.addEventListener('click', function() {
 
 buttonStop.addEventListener('click', function() {
   resetControls
+  clearTimeout ()
 })
 
 buttonSoundOff.addEventListener('click', function() {
