@@ -6,8 +6,11 @@
 // SEM ALTERAR suas funcionalidades
 // EcmaScript - 2015 ES6 Modules
 
+// default import
 import resetControls from "./controls.js"
-import "./timer.js"
+
+//name import
+import {countdown, resetTimer} from "./timer.js"
 
 const buttonPlay = document.querySelector('.play')
 const buttonPause = document.querySelector('.pause')

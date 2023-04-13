@@ -31,9 +31,13 @@ function countdown() {
     }
 
      
-    updateTimerDisplay(minutes, seconds -1)
+    updateTimerDisplay(minutes, String(seconds -1))
     
     countdown()
   }, 1000)
   
 }
+
+
+// named export
+export {}
