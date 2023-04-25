@@ -41,7 +41,7 @@ export default function Controls({
     play,
     pause,
     getMinutes
-    soundOff
+    
   }
 
 

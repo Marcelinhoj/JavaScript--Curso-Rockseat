@@ -65,7 +65,7 @@ buttonSet.addEventListener('click', function() {
   let newMinutes = controls.getMinutes
 
   if (!newMinutes){
-    timer.resetTimer()
+    timer.reset()
     return
   }
 
