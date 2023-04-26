@@ -72,7 +72,6 @@ buttonSet.addEventListener('click', function() {
   }
   
   timer.updateDisplay(newMinutes, 0)
-  timer.updateMinutes(newMinutes)
-  
+  timer.updateMinutes(newMinutes) 
  
 })
