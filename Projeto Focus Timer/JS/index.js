@@ -29,7 +29,7 @@ const controls = Controls({
 
 })
 
-const timer = Timer(
+const timer = Timer({
   minutesDisplay,
   secondsDisplay,  
   resetControls: controls.reset
