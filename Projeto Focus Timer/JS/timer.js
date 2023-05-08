@@ -8,8 +8,10 @@ export default function Timer({
   let minutes = Number(minutesDisplay.textContent)
 
 
-function updateDisplay(minutes, seconds) {
-  minutesDisplay.textContent = String(minutes).padStart(2, "0")
+function updateDisplay(newMinutes, seconds) {
+  newMinutes = newMinutes || minutes
+  seconds = seconds || 0
+  minutesDisplay.textContent = String(newMinutes).padStart(2, "0")
   secondsDisplay.textContent = String(seconds).padStart(2, "0")
   updateMinutes(minutes)
 }
@@ -30,7 +32,8 @@ function countdown() {
     
     
     if (minutes <= 0) {     
-      resetControls()      
+      resetControls()
+      updateDisplay()     
       return
     }
     
