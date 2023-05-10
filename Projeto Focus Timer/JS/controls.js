@@ -40,5 +40,3 @@ export default function Controls({
       getMinutes
   }
 }
-Footer
-© 2023 Git
