@@ -41,9 +41,15 @@
       console.log('antes do fatch')
       fetch(route)
       .then(data => data.text ())      
-      .then(html => console.log(html))
+      .then(html => {
+        document.querySelector('#app').innerHTML = html
+      })
 
-      console.log(route)
+      handle()
+
+      window.onpo
+
+     
     }
   </script>
 
