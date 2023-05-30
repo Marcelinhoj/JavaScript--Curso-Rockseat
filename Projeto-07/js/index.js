@@ -18,14 +18,14 @@ function route(event) {
 function handle() {
   const { pathname } = window.location
   const route = routes[pathname] || routes[404]
-  console.log('antes do fatch')
   fetch(route)
   .then(data => data.text ())      
   .then(html => {
     document.querySelector('#app').innerHTML = html
   })
+}
 
   handle()
 
   window.onpopstate = () => handle()
-}
+  window.route = () => route()
