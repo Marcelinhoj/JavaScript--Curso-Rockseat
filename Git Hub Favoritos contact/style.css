@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+
+  --ff-primary: 'Poppins, sans-serif';
+  --ff-color: #303030;
+
+  --hue: 194;
+  --primary-color: hsl(--hue), 100%, 63%
+}
+
+body {
+  font-size: 1.6rem;
+  color: var(--ff-color);
+}
+
+*body {
+  font-size: var(--ff-primary);
+}
