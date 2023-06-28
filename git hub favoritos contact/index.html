@@ -5,26 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Github Favorites</title>
 </head>
+
 <body>
    <div id="app">
     <header>
       <h1>Github Favorites</h1>
+      <div class="search">
+        <label for="input-search">Usuário do Github</label>
+        <input type="input-search" placeholder="Usuário do Github">
+        <button>&plus;</button>
+      </div>
     </header>
-    <div class="search">
-      <label for="input-search">Usuário do Github</label>
-      <input type="input-search" placeholder="Usuário do Github">
-      <button>&plus;</button>
-    </div>
     <table>
      <thead>
       <tr>
         <th>Usuário</th>
         <th>Repositório</th>
-        <th></th>
+        <th>Seguidores</th>
         <th></th>
       </tr>
      </thead>
-     <tbody></tbody>
+     <tbody>
+      <td class="user">
+        <img src="https://github.com/maykbrito.png" alt="Imagem de Maykbrito">
+        <a href="https://gitbub.com/maykbrito">
+          <p>Mayk Brito</p>
+          <span>maykbrito</span>
+        </a>
+      </td>
+      <td class="repositories">
+        76
+      </td>
+      <td class="followers">
+        9597
+      </td>
+      <td>
+        <button>&times;</button>
+      </td>
+     </tbody>
       
     
     </table>
