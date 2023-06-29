@@ -51,3 +51,18 @@ header{
   align-items: center;
   justify-content: space-between;
 }
+
+header h1 {
+  font-size: 2rem;
+  align-items: center;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  height: 3.2rem;
+  border: 1px solid #ccc;
+}
