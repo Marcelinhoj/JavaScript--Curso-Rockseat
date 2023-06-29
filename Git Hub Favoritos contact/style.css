@@ -11,7 +11,7 @@
   --ff-color: #303030;
 
   --hue: 194;
-  --primary-color: hsl(--hue), 100%, 63%
+  --primary-color: hsl(--hue), 100%, 63%;
 }
 
 body {
@@ -22,10 +22,6 @@ body {
 
 *body {
   font-size: var(--ff-primary);
-}
-
-button {
-  background-color: var(--primary-color);
 }
 
 .sr-only {
@@ -50,6 +46,8 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  margin: 2.5rem;
 }
 
 header h1 {
@@ -65,4 +63,39 @@ header h1 {
 .search input {
   height: 3.2rem;
   border: 1px solid #ccc;
+  border-radius: .4rem 0 0 .4rem;
+  padding: 0 .8rem;
+}
+
+.search button {
+  background-color: var(--primary-color);
+  border-radius: 0 .4rem .4rem 0;
+  height: 3.2rem;
+  border: none;
+  padding: 0 1rem;
+
+  cursor: pointer;
+}
+
+.search button:hover {
+  filter: brightness(1.1);
+}
+
+table {
+  width: 100%;
+}
+
+table * {
+  font-size: 1.4rem;
+  color: var(--text-color);
+}
+
+table th {}
+
+td.user img {
+  width: 5rem;
+  height: 5rem;
+
+  object-fit: cover;
+  border-radius: 50%;
 }
